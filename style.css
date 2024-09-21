@@ -138,8 +138,8 @@ html{
 .skills img{
     width: 60px;
 }
-.img1:hover{
-    transform: scale(1.5);
+.skills img:hover{
+    transform: scale(1.2);
 }
 
 
