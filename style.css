@@ -1,0 +1,783 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html{
+    background-color: rgba(143, 141, 141, 0.123);   
+}
+
+
+.navbar{
+    background-color: #0f1860;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px 16px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5vw;
+    font-size: 20px;
+}
+.logo img{
+    width: 150px;
+}
+.logo:hover{
+    rotate: 180deg;
+}
+.navbar-items{
+    display: flex;
+    padding: 20px;
+    margin: 0px 32px;
+}
+.navbar-items ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80vw;
+}
+.navbar-links{
+    text-decoration: none;
+    color: #ffffff; 
+}
+.navbar-links:hover{
+    color: #e1a7b4;
+}
+
+
+
+.home, .about{
+    background-image: url('Assets/15276012_5570869.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 64px 16px 32px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.home{
+    display: flex;
+    padding: 96px 144px 64px;
+    justify-content: space-evenly;
+    /* gap: 50px; */
+    align-items: center;
+    color: #100529f6;
+    border-radius: 0px 0px 60px 60px;
+}
+/* .home-pic{
+    background-image: url("Assets/lydia.jpg");
+    background-size: 100%;
+    border-radius: 5px 30px 30px 30px;
+    background-repeat: no-repeat;
+    box-shadow: 10px 10px #0f1860;
+    height: 280px;
+    width: 80%;
+} */
+.img-home{
+    width: 230px;
+    height: 280px;
+    border-radius: 5px 30px 30px 30px;
+    box-shadow: 10px 10px #0f1860;
+}
+.home-content{
+    margin: 32px 0px;
+    padding: 32px;
+    width: 40vw;
+}
+.home-head, .about-head, .contact-head{
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #6b8aca;
+}
+.home-child{
+    margin: 16px 0px;
+}
+
+
+.about{
+    border-radius: 60px;
+    padding: 64px;
+    display: flex;
+    justify-content: space-around;
+}
+.about-content{
+    padding: 64px;
+    width: 40vw;
+}
+.about-child{
+    margin: 16px 0px;
+}
+.links{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 30px;
+}
+.connect{
+    color: #4042a0;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: cursive;
+    margin: 8px 0px;
+}
+.skills{
+    padding: 64px 32px;
+    margin: 16px 8px;
+}
+.skills_head{
+    font-size: 20px;
+}
+.skills span{
+    display: flex;
+    margin-top: 8px;
+    width: 25vw;
+    padding: 16px 32px;
+    justify-content: space-between;;
+}
+.skills img{
+    width: 60px;
+}
+.img1:hover{
+    transform: scale(1.5);
+}
+
+
+.contact{
+    border-radius: 60px;
+    padding: 32px;
+    background-image: url("Assets/bg-img.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 64px;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.contact-content{
+    text-align: center;
+    padding: 32px;
+    margin: 32px 64px;
+}
+.contact-head{
+    color: #0f1860;
+}
+.form-item{
+    margin: 16px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50vw;
+}
+.name, .email, .message{
+    border-radius: 5px;
+    border: none;
+    padding: 16px;
+    width: 50vw;
+    font-size: 16px;
+}
+.message{
+    height: 10vw;
+}
+.contact-btn{
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    width: 15vw;
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 5px 5px #0f1860;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .logo img{
+        width: 80px;
+    }
+    .navbar-items{
+        display: none;
+    }
+    .icon{
+        margin: 0px 64px;
+        padding: 10px;
+    }
+
+
+    .home, .about{
+        background-image: url('Assets/15276012_5570869.jpg');
+        background-size: 150%;
+        background-repeat: repeat;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 30px 0px;
+    }
+    .home{
+        display: grid;
+        padding: 64px 32px 32px;
+        gap: 0px;
+        color: #140635f6;
+        margin: 32px 0px;
+    }
+    .img-home{
+        width: 120px;
+        height: 150px;
+        border-radius: 30px 0px;
+        box-shadow: 5px 5px #0f1860;
+        margin-left: 20px;
+    }
+    .home-content{
+        margin: 16px 0px;
+        padding: 16px;
+        width: 70vw;
+    }
+    .home-head, .about-head, .contact-head{
+        font-weight: 600;
+        font-size: 25px;
+        color: #6b8aca;
+    }
+    .home-child{
+        margin: 8px 0px;
+    }
+
+
+    .about{
+        display: grid;
+        padding: 48px 16px 32px;
+        margin: 60px 0px;
+    }
+    .about-content{
+        padding: 16px 32px;
+        width: 70vw;
+        margin: auto;
+    }
+    .about-child{
+        margin: 8px 0px;
+    }
+    .links{
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+        gap: 25px;
+    }
+    .links img{
+        width: 15px;
+    }
+    .connect{
+        color: #4042a0;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: cursive;
+        margin: 10px 0px;
+    }
+    .skills{
+        padding: 16px;
+        margin: auto;
+    }
+    .skills_head{
+        font-size: 20px;
+    }
+    .skills span{
+        display: flex;
+        margin: 16px auto;
+        width: 50vw;
+        padding: 16px 32px;
+        justify-content: space-between;
+    }
+    .skills img{
+        width: 40px;
+    }
+
+
+    .contact{
+        border-radius: 30px 0px ;
+        padding: 48px auto;
+        background-image: url("Assets/bg-img.jpg");
+        background-size: cover;
+        background-repeat: repeat;
+        margin: 60px 0px 0px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+    .contact-content{
+        padding: 32px;
+        margin: auto;
+    }
+    .contact-head{
+        color: #0f1860;
+    }
+    .form-item{
+        margin: 32px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 50vw;
+    }
+    .name, .email, .message{
+        border-radius: 5px;
+        border: none;
+        padding: 16px;
+        width: 50vw;
+    }
+    .message{
+        height: 20vw;
+    }
+    .contact-btn{
+        padding: 16px;
+        border-radius: 10px;
+        border: none;
+        width: 30vw;
+        margin: auto;
+        background-color: #ffffff;
+        box-shadow: 5px 5px #0f1860be;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .navbar{
+        height: 7vw;
+    }
+    .logo img{
+        width: 100px;
+    }
+    .logo:hover{
+        rotate: 180deg;
+    }
+    .navbar-items{
+        display: flex;
+        padding: 16px;
+    }
+    .navbar-items ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        width: 70vw;
+    }
+    .navbar-links{
+        text-decoration: none;
+        color: #ffffff;
+    }
+    .navbar-links:hover{
+        color: #e1a7b4;
+    }
+    .icon{
+        display: none;
+    }
+
+
+    .home, .about{
+        background-image: url('Assets/15276012_5570869.jpg');
+        background-size: 150%;
+        background-repeat: repeat;
+        border-radius: 30px 0px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+    .home{
+        display: grid;
+        color: #100529f6;
+        gap: 0;
+        padding: 64px 16px 16px;
+        margin: 56px 0px 32px;
+    }
+   
+    .img-home{
+        width: 120px;
+        height: 150px;
+        border-radius: 20px 0px;
+        box-shadow: 5px 5px #0f1860da;
+        margin-left: 16px;
+    }
+    .home-content{
+        margin: 8px 0px 32px;
+        padding: 10px 16px;
+        width: 80vw;
+    }
+    .home-head, .about-head, .contact-head{
+        font-weight: 600;
+        font-size: 20px;
+        /* margin-bottom: 5px; */
+        color: #6b8aca;
+    }
+    .home-child{
+        margin: 8px 0px;
+    }
+
+
+    .about{
+        display: grid;
+        padding: 64px 16px 16px;
+        margin: 32px 0px;
+    }
+    .about-content{
+        padding: 16px;
+        width: 80vw;
+        margin: auto;
+    }
+    .about-child{
+        margin: 8px 0px;
+    }
+    .links{
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+        gap: 30px;
+    }
+    .links img{
+        width: 20px;
+    }
+    .connect{
+        color: #4042a0;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: cursive;
+        margin: 10px 0px;
+    }
+    .skills{
+        padding: 16px;
+    }
+    .skills_head{
+        font-size: 22px;
+    }
+    .skills span{
+        display: flex;
+        margin: 16px auto;
+        width: 50vw;
+        padding: 16px 32px;
+        justify-content: space-between;
+    }
+    .skills img{
+        width: 70px;
+    }
+
+
+    .contact{
+        border-radius: 30px 0px ;
+        padding: 64px auto;
+        background-image: url("Assets/bg-img.jpg");
+        background-size: cover;
+        background-repeat: repeat;
+        margin: 60px 0px 0px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+    .contact-content{
+        padding: 64px 32px;
+        margin: auto;
+    }
+    .contact-head{
+        color: #0f1860;
+    }
+    .form-item{
+        margin: 32px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 50vw;
+    }
+    .name, .email, .message{
+        border-radius: 5px;
+        border: none;
+        padding: 16px;
+        margin:  8px auto;
+        /* width: 60vw; */
+    }
+    .message{
+        height: 20vw;
+    }
+    .contact-btn{
+        padding: 16px;
+        border-radius: 10px;
+        border: none;
+        width: 30vw;
+        margin: auto;
+        background-color: #ffffff;
+        box-shadow: 5px 5px #0f1860be;
+    }      
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media(min-width: 768px) and (max-width: 992px) {
+    .navbar{
+        height: 10vw;
+    }
+    
+    .logo img{
+        width: 100px;
+    }
+    .logo:hover{
+        rotate: 180deg;
+    }
+
+    .home, .about{
+        background-image: url('Assets/15276012_5570869.jpg');
+        background-size: 150%;
+        background-repeat: repeat;
+        margin: 64px 8px 32px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+    .home{
+        display: flex;
+        padding: 32px 64px 64px;
+        justify-content: center;
+        gap: 40px;
+        align-items: center;
+        color: #100529f6;
+        border-radius: 0px 0px 60px 60px;
+    }
+    .img-home{
+        width: 200px;
+        height: 250px;
+        border-radius: 0px 20px 20px 20px;
+        box-shadow: 5px 5px #0f1860;
+    }
+    .home-content{
+        margin: 64px 0px;
+        padding: 32px;
+        font-size: 15px;
+        width: 45vw;
+    }
+    .home-head, .about-head, .contact-head{
+        font-weight: 600;
+        font-size: 35px;
+        color: #6b8aca;
+    }
+    .home-child{
+        margin: 16px 0px;
+    }
+
+
+    .about{
+        border-radius: 60px;
+        display: grid;
+        padding: 64px auto 16px;
+        margin: 32px 8px;
+    }
+    .about-content{
+        padding: 16px;
+        width: 80vw;
+        margin: auto;
+    }
+    .about-child{
+        margin: 8px 0px;
+    }
+    .links{
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+        gap: 25px;
+    }
+    .links img{
+        width: 22px;
+    }
+    .connect{
+        color: #4042a0;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: cursive;
+        margin: 5px 0px;
+    }
+    .skills{
+        padding: 16px;
+    }
+    .skills_head{
+        font-size: 22px;
+    }
+    .skills span{
+        display: flex;
+        margin: 16px auto;
+        width: 50vw;
+        padding: 16px 64px;
+        justify-content: space-between;
+    }
+    .skills img{
+        width: 70px;
+    }
+ 
+
+    .contact{
+        border-radius: 60px 60px 0px 0px ;
+        padding: 64px auto;
+        background-image: url("Assets/bg-img.jpg");
+        background-size: cover;
+        background-repeat: repeat;
+        margin: 60px 0px 0px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+    .contact-content{
+        padding: 64px 32px;
+        margin: auto;
+    }
+    .contact-head{
+        color: #0f1860;
+        margin-bottom: 32px;
+    }
+    .form-item{
+        margin: 16px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 50vw;
+    }
+    .name, .email, .message{
+        border-radius: 5px;
+        border: none;
+        padding: 16px;
+        /* width: 60vw; */
+        margin: 8px auto;
+    }
+    .message{
+        height: 20vw;
+    }
+    .contact-btn{
+        padding: 16px;
+        border-radius: 10px;
+        border: none;
+        width: 25vw;
+        margin: auto;
+        background-color: #ffffff;
+        box-shadow: 5px 5px #0f1860be;
+    }      
+}
+
+
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .navbar{
+        height: 10vw;
+    }
+    .home, .about{
+        background-image: url('Assets/15276012_5570869.jpg');
+        background-size: 150%;
+        background-repeat: repeat;
+        margin: 64px 8px 32px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+    .home{
+        display: flex;
+        padding: 32px auto 64px;
+        justify-content: center;
+        gap: 50px;
+        align-items: center;
+        color: #100529f6;
+        border-radius: 0px 0px 60px 60px;
+    }
+    .img-home{
+        width: 200px;
+        height: 250px;
+        border-radius: 0px 30px 30px 30px;
+        box-shadow: 10px 10px #0f1860;
+    }
+    .home-content{
+        margin: 64px 0px;
+        padding: 32px;
+        font-size: 15px;
+        width: 50vw;
+    }
+    .home-head, .about-head, .contact-head{
+        font-weight: 600;
+        font-size: 35px;
+        color: #6b8aca;
+    }
+    .home-child{
+        margin: 16px 0px;
+    }
+
+
+    .about{
+        border-radius: 60px;
+        display: grid;
+        padding: 64px auto 16px;
+        margin: 32px 8px;
+    }
+    .about-content{
+        padding: 16px;
+        width: 80vw;
+        margin: auto;
+    }
+    .about-child{
+        margin: 8px 0px;
+    }
+    .links{
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+        gap: 25px;
+    }
+    .links img{
+        width: 22px;
+    }
+    .connect{
+        color: #4042a0;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: cursive;
+        margin: 5px 0px;
+    }
+    .skills{
+        padding: 16px;
+    }
+    .skills_head{
+        font-size: 22px;
+    }
+    .skills span{
+        display: flex;
+        margin: 16px auto;
+        width: 60vw;
+        padding: 16px 32px;
+        justify-content: space-between;
+    }
+    .skills img{
+        width: 80px;
+    }
+
+
+    .contact{
+        border-radius: 60px 60px 0px 0px ;
+        padding: 64px auto;
+        background-image: url("Assets/bg-img.jpg");
+        background-size: cover;
+        background-repeat: repeat;
+        margin: 60px 0px 0px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+    .contact-content{
+        padding: 64px 32px;
+        margin: auto;
+    }
+    .contact-head{
+        color: #0f1860;
+        margin-bottom: 32px;
+    }
+    .form-item{
+        margin: 16px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 50vw;
+    }
+    .name, .email, .message{
+        border-radius: 5px;
+        border: none;
+        padding: 16px;
+        margin: 8px auto;
+        /* width: 50vw; */
+    }
+    .message{
+        height: 20vw;
+    }
+    .contact-btn{
+        padding: 16px;
+        border-radius: 10px;
+        border: none;
+        width: 20vw;
+        margin: auto;
+        background-color: #ffffff;
+        box-shadow: 5px 5px #0f1860be;
+    }      
+}
